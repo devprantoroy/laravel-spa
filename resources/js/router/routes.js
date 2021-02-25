@@ -13,6 +13,7 @@ export default [
   { path: '/email/resend', name: 'verification.resend', component: page('auth/verification/resend.vue') },
 
   { path: '/home', name: 'home', component: page('home.vue') },
+  
   {
     path: '/settings',
     component: page('settings/index.vue'),
@@ -22,6 +23,9 @@ export default [
       { path: 'password', name: 'settings.password', component: page('settings/password.vue') }
     ]
   },
+
+  //bank 
+  { path: '/bank', name: 'bank.index', component: page('bank/bank.vue') },
 
   { path: '*', component: page('errors/404.vue') }
 ]

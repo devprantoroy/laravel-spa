@@ -18,6 +18,14 @@
         </ul>
 
         <ul class="navbar-nav ml-auto">
+          <li v-if="user" class="nav-item">
+            <router-link :to="{ name: 'bank.index' }" class="dropdown-item pl-3">
+               
+                {{ $t('Bank') }}
+              </router-link>
+
+            
+          </li>
           <!-- Authenticated -->
           <li v-if="user" class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-dark"

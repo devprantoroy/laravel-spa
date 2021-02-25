@@ -59,7 +59,10 @@ export default {
     // Fill the form with user data.
     this.form.keys().forEach(key => {
       this.form[key] = this.user[key]
+
+       console.log(this.user[key])
     })
+   
   },
 
   methods: {
